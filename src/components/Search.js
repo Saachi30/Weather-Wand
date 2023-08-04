@@ -8,11 +8,16 @@ function Search(props) {
         cityinputVal=event.target.value
         setCityChange(cityinputVal);
     }
-   
+   function checkKey(event){
+    if(event.keyCode===13){
+        props.sendCity(cityinput)
+        setCityChange("");
+    }
+   }
     
     return (
         <div className="search-container">
-            <input type="search" className="search-box" placeholder="Enter city" onChange={handleChange} value={cityinput}></input>
+            <input type="search" className="search-box" placeholder="Enter city" onChange={handleChange} value={cityinput} onKeyDown={checkKey}></input>
             <div className="btn" onClick={()=>{
                 
                 props.sendCity(cityinput)

@@ -1,6 +1,7 @@
 import React,{useState}  from "react";
 import Search from "./components/Search"
 import Tempdata from "./components/Tempdata";
+import logo from "./magicwand.png";
 function App() {
   const [city, setCity]=useState("");
 
@@ -34,7 +35,11 @@ function App() {
       <div className="out-container">
         
         <div className="left-container" id="left-container">
-        <h2 style={{marginBottom:"25px", color:"white"}}>WeatherWand</h2>
+        <div className="logo-container">
+        <img src={logo} id="logo"></img>
+        <h2 style={{marginBottom:"25px"}}>WeatherWand</h2>
+        
+        </div>
           <Search sendCity={setCityInput}></Search>
           <Tempdata city={city}></Tempdata>
           <div>

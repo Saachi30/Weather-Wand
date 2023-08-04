@@ -1,25 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
 *{
   margin: 0px;
   padding: 0px;
-  font-family: Manrope;
+  
 }
 
 .out-container{
   height: 100vh;
   width: 100vw;
-  background-color: rgb(204, 229, 245);
+  background-color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
   justify-content: center;
+ 
 }
 .left-container, #left-container{
   
   width: 55vw;
   height: 90vh;
-  box-shadow: 3px 2px rgb(86, 86, 86);
-  border-radius: 10px;
+  box-shadow: 5px 5px rgb(158, 158, 158);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,6 +60,7 @@
   padding: 3px 10px;
   border-radius: 20px;
   font-size: 18px;
+  font-family: Manrope;
 }
 .btn{
  
@@ -83,9 +85,10 @@
  flex-direction: column;
  justify-content: center;
  align-items: center;
+ font-family: Manrope;
 }
 .data-temp{
-  
+  font-family: Manrope;
   width: 20vw;
   text-align: center;
 }
@@ -104,8 +107,8 @@
   justify-content:center;
   flex-direction: column;
   margin-left: 10px;
-  color: white
-  
+  color: white;
+  font-family: Manrope;
 }
 .date{
   font-size: 40px;
@@ -145,4 +148,19 @@ i{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.logo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  font-family: 'Rajdhani', sans-serif;
+  color: white;
+}
+#logo{
+  width: 20px;
+  height: auto;
+  margin-bottom: 25px;
+  margin-right: 5px;
 }

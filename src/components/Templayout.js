@@ -1,7 +1,6 @@
 // icon and data
 import React, { useState } from "react";
-import Helmet from "react-helmet";
-import Bgchange from "../bgchangescript";
+import Bgchange from "../bgchangescript.js";
 function Templayout(props) {
     const temperature = Math.round((props.temp1.temp) - 273);
     const weather = props.weather1.main;
@@ -34,7 +33,9 @@ function Templayout(props) {
     const month = date.getMonth();
     let monthtext = "";
     let weekday = "";
+
     Bgchange(hours);
+    
     switch (day) {
         case 0: {
             weekday = "Sunday";
