@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Weather-Wand/static/css/main.c1b7475f.css",
-    "main.js": "/Weather-Wand/static/js/main.9537426c.js",
+    "main.css": "/Weather-Wand/static/css/main.4d216eb9.css",
+    "main.js": "/Weather-Wand/static/js/main.5386405c.js",
     "static/js/787.d62d1c65.chunk.js": "/Weather-Wand/static/js/787.d62d1c65.chunk.js",
     "static/media/night1.webp": "/Weather-Wand/static/media/night1.b6c759bf1d51962b971e.webp",
-    "static/media/magicwand.png": "/Weather-Wand/static/media/magicwand.c8ff2dd7334f9a664e30.png",
     "static/media/morning.jpg": "/Weather-Wand/static/media/morning.84c2390c82b1a49da958.jpg",
     "static/media/evening3.jpg": "/Weather-Wand/static/media/evening3.1e4f812598afe2c18df8.jpg",
+    "static/media/weather-logo.png": "/Weather-Wand/static/media/weather-logo.01046dc30b565abd4920.png",
     "static/media/afternoon2.jpg": "/Weather-Wand/static/media/afternoon2.2c45f6dbd4ee42483cc2.jpg",
     "index.html": "/Weather-Wand/index.html",
-    "main.c1b7475f.css.map": "/Weather-Wand/static/css/main.c1b7475f.css.map",
-    "main.9537426c.js.map": "/Weather-Wand/static/js/main.9537426c.js.map",
+    "main.4d216eb9.css.map": "/Weather-Wand/static/css/main.4d216eb9.css.map",
+    "main.5386405c.js.map": "/Weather-Wand/static/js/main.5386405c.js.map",
     "787.d62d1c65.chunk.js.map": "/Weather-Wand/static/js/787.d62d1c65.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c1b7475f.css",
-    "static/js/main.9537426c.js"
+    "static/css/main.4d216eb9.css",
+    "static/js/main.5386405c.js"
   ]
 }
