@@ -1,7 +1,9 @@
 import React,{useState}  from "react";
 import Search from "./components/Search"
 import Tempdata from "./components/Tempdata";
-import logo from "./magicwand.png";
+import logo from "./weather-logo.png";
+import Footer from "./components/Footer";
+
 function App() {
   const [city, setCity]=useState("");
 
@@ -9,35 +11,14 @@ function App() {
     setCity(cityinput);
    
   }
-  function bgchange(){
-    let hours=null;
-    setInterval(()=>{
-        hours=new Date().getHours;
-    },10000);
-    console.log(hours);
-    
-    if(hours>=5 && hours<12){
-        return('../public/morning.jpg');
-    }
-    else if(hours>=12 && hours<16){
-        return('../public/afternoon1.jpg');
-    }
-    else if(hours>=16 && hours<20){
-        return('../public/evening3.jpg');
-    }
-    else{
-        return('../public/night1.webp');
-    }
-}
-
   return (
     <>
       <div className="out-container">
         
-        <div className="left-container" id="left-container">
+        <div className="main-container" id="main-container">
         <div className="logo-container">
         <img src={logo} id="logo"></img>
-        <h2 style={{marginBottom:"25px"}}>WeatherWand</h2>
+        <h2>WeatherWand</h2>
         
         </div>
           <Search sendCity={setCityInput}></Search>
@@ -46,10 +27,8 @@ function App() {
           </div>
         </div>
 
-        <div className="right-container"></div> {/*container for forecast*/}
+        <Footer></Footer>
       </div>
-
-
 
     </>
   );

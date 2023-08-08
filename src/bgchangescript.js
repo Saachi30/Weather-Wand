@@ -4,12 +4,12 @@ import evening from "./evening3.jpg";
 import night from "./night1.webp";
 
 let hours = new Date().getHours();
-setTimeout(()=>{Bgchange(hours)}, 1000)
+setTimeout(()=>{Bgchange(hours)}, 10)
 
 
 function Bgchange(hours) {
     setTimeout(() => {
-    const bgimage = document.getElementById("left-container")
+    const bgimage = document.getElementById("main-container")
 
     if (hours >= 5 && hours < 10) {
         bgimage.style.backgroundImage = `url(${morning})`;
